@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MovieDatabaseApp.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout Spacing="0">
+
+                <StackLayout BackgroundColor="#116CF2" Orientation="Vertical">
+                    <!--  TOP SECTION  -->
+
+                    <Label
+                        Margin="25,70,0,0"
+                        FontSize="35"
+                        HorizontalOptions="Center"
+                        Text="Welcome To"
+                        TextColor="#B3FF05" />
+                    <Label
+                        Margin="140,-30,120,0"
+                        FontSize="50"
+                        HorizontalOptions="Center"
+                        Text="Moovy"
+                        TextColor="#B3FF05" />
+
+                </StackLayout>
+                <StackLayout
+                    Margin="0,0,0,0"
+                    BackgroundColor="#116CF2"
+                    HeightRequest="500"
+                    Orientation="Horizontal"
+                    WidthRequest="250">
+                    <!--  Middle SECTION  -->
+                    <Label
+                        Margin="140,-30,120,0"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="You'll be redirected in 3 seconds."
+                        TextColor="#B3FF05"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="250" />
+
+                </StackLayout>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

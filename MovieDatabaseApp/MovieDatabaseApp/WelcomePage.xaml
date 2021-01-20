@@ -1,8 +1,175 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MovieDatabaseApp.WelcomePage">
+<ContentPage
+    x:Class="MovieDatabaseApp.WelcomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        
+        <StackLayout Spacing="0">
+
+            <StackLayout BackgroundColor="#116CF2" Orientation="Horizontal">
+                <!--  TOP SECTION  -->
+
+                <Label
+                    Margin="50,30,120,0"
+                    FontSize="50"
+                    HeightRequest="150"
+                    Text="Moovy"
+                    TextColor="#B3FF05" />
+
+
+                <Button
+                    x:Name="btnThemeColor"
+                    Clicked="btnThemeColor_Clicked"
+                    HeightRequest="10"
+                    WidthRequest="50" />
+
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#04DBD5">
+                <!--  MIDDLE SECTION  -->
+
+                <StackLayout>
+                    <Entry
+                        x:Name="txtMovieName"
+                        ClearButtonVisibility="WhileEditing"
+                        FontSize="15"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Enter Movie Name"
+                        ReturnType="Next"
+                        TextColor="DarkMagenta"
+                        WidthRequest="200" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button
+                        x:Name="btnSearch"
+                        BackgroundColor="#04DBD5"
+                        BorderColor="DarkMagenta"
+                        BorderWidth="1"
+                        Clicked="btnSearch_Clicked"
+                        FontSize="10"
+                        HeightRequest="32"
+                        HorizontalOptions="Center"
+                        Text="Search"
+                        TextColor="DarkMagenta"
+                        WidthRequest="100" />
+                </StackLayout>
+
+
+
+
+            </StackLayout>
+            <StackLayout BackgroundColor="#04DBD5" HeightRequest="300">
+                <!--  LOGIN SECTION  -->
+                <StackLayout HorizontalOptions="CenterAndExpand">
+
+                    <StackLayout HeightRequest="100" />
+                    <StackLayout WidthRequest="200">
+                        <Entry
+                            x:Name="txtUsername"
+                            ClearButtonVisibility="WhileEditing"
+                            FontSize="15"
+                            HorizontalTextAlignment="Center"
+                            IsVisible="false"
+                            Placeholder="Username"
+                            ReturnType="Next"
+                            TextColor="DarkMagenta"
+                            WidthRequest="200" />
+                    </StackLayout>
+                    <StackLayout>
+
+                        <Entry
+                            x:Name="txtPassword"
+                            ClearButtonVisibility="WhileEditing"
+                            FontSize="15"
+                            HorizontalTextAlignment="Center"
+                            IsVisible="false"
+                            Placeholder="Password"
+                            ReturnType="Next"
+                            TextColor="DarkMagenta"
+                            WidthRequest="200" />
+
+                    </StackLayout>
+                </StackLayout>
+
+                <Button
+                    x:Name="btnLogin"
+                    Margin="0,0,0,75"
+                    BackgroundColor="#04DBD5"
+                    BorderColor="DarkMagenta"
+                    BorderWidth="1"
+                    Clicked="btnLogin_Clicked"
+                    FontSize="10"
+                    HeightRequest="32"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    TextColor="DarkMagenta"
+                    VerticalOptions="EndAndExpand"
+                    WidthRequest="100" />
+
+
+
+            </StackLayout>
+
+
+            <StackLayout BackgroundColor="#ABF4FA" HeightRequest="110">
+                <!--  FOOTER SECTION  -->
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+
+
+                    <ImageButton
+                        x:Name=" btnFacebook"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Clicked="btnFacebook_Clicked"
+                        Source="facebook.png" />
+
+
+                    <ImageButton
+                        x:Name="btnInstagram"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Clicked="btnInstagram_Clicked"
+                        Source="instagram.png" />
+
+                    <ImageButton
+                        x:Name="btnSnapchat"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Clicked="btnSnapchat_Clicked"
+                        Source="snapchat.png" />
+
+                    <ImageButton
+                        x:Name="btnTwitter"
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Clicked="btnTwitter_Clicked"
+                        Source="twitter.png" />
+                </Grid>
+
+
+
+
+            </StackLayout>
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+
+<!--  BackgroundColor="#04DBD5"  -->
